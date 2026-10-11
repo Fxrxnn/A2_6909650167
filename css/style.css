@@ -51,6 +51,29 @@ img {
     border: 3px solid #0056b3;
 }
 
+.evidence-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.evidence-img {
+    flex: 1 1 280px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    border: 0;
+    border-radius: 0;
+}
+
+.scnd-evidence-img {
+    width: 350px;
+    height: 250px;
+    object-fit: contain;
+    border: 0;
+    border-radius: 0;
+}
+
 a {
     color: #0056b3;
     text-decoration: none;
