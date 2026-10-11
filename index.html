@@ -4,107 +4,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learning portfolio of Kritsana Penyai, Computer Science student.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <title>My First Learning Portfolio</title>
 </head>
 
 <body>
-    <div id="page">
-        <header>
-            <h1>My First Learning Portfolio</h1>
+    <div id="page" class="container-xl px-3 px-lg-4">
+        <header class="site-header rounded-4 mt-3 mt-lg-4 p-4 p-md-5">
+            <h1 class="mb-0">My First Learning Portfolio</h1>
         </header>
 
-        <main>
-            <div>
-                <h2>About Me</h2>
-                <img src="media/selfa.jpg" class="img">
-                <p>ชื่อ-นามสกุล: นายกฤษณะ เป็นใย</p>
-                <p>รหัสนักศึกษา: 6909650167</p>
-                <p>สาขาวิชา: วิทยาการคอมพิวเตอร์</p>
-                <p>มหาวิทยาลัย: มหาวิทยาลัยธรรมศาสตร์</p>
-                <p>ข้อมูลติดต่อ: kritsana.pen@dome.tu.ac.th</p>
-            </div>
-
-            <div>
-                <h2>What I Built</h2>
-                <p>งาน A1 นี้ เป็นเว็บไซต์แบบหน้าเดียว(Single-page) Learning Portfolio </p>
-                <p style="font-weight: bold;">ส่วนประกอบสำคัญ:</p>
-                <ul>
-                    <li>Header แสดงชื่อผลงาน</li>
-                    <li>ส่วน About Me แสดงข้อมูลส่วนตัวและรูปภาพ</li>
-                    <li>ส่วน Reflection และเนื้อหาสรุปกระบวนการทำงาน</li>
-                </ul>
-                <p>วิเคราะห์ Client / Server: ในขณะที่เปิดใช้งานเว็บไซต์นี้จากเครื่องตนเอง (ผ่านไฟล์ `file:///...`)
-                    เกิดขึ้นเพียง Client Side เท่านั้น เนื่องจากเบราว์เซอร์ทำการอ่านและประมวลผลไฟล์ HTML/CSS
-                    โดยตรงจากดิสก์ในเครื่อง ยังไม่มี Server ประมวลผลหรือส่งข้อมูลผ่านโปรโตคอล HTTP/HTTPS</p>
-            </div>
-
-            <div>
-                <h2>How I Built It</h2>
-                <p>งานนี้เริ่มจากการวางโครงสร้างเนื้อหาด้วย HTML จากนั้นทำการตกแต่งด้วย CSS เพื่อความสวยงามและอ่านง่าย
-                </p>
-                <p style="font-weight: bold;">เครื่องมือและแหล่งข้อมูลที่ใช้:</p>
-                <ul>
-                    <li>VS Code ในการเขียนโค้ด</li>
-                    <li>เว็บไซต์ศึกษาเพิ่มเติม: <a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
-                </ul>
-            </div>
-
-            <div>
-                <h2>Reflection</h2>
-
-                <article>
-                    <h3>ปัญหาและความท้าทายที่พบ</h3>
-                    <p>ความท้าทายหลักคือการจัด Layout ด้วย CSS ให้ตรงตามโครงสร้างที่ต้องการ
-                        และการอ้างอิงไฟล์ให้ถูกต้องเพื่อไม่ให้เกิด Broken Link แก้ไขได้โดยการตรวจสอบ Directory Tree
-                        อย่างละเอียด</p>
-                </article>
-
-                <article>
-                    <h3>ความเข้าใจที่ได้รับจากการทำ A1</h3>
-                    <p>เข้าใจโครงสร้างของการเขียนมากขึ้น ในการเลือกใช้ tag ที่ช่วยให้โครงสร้างเป็นระเบียบ
-                        และเข้าใจการทำงานของ Client-side ในการเปิดไฟล์เว็บเบราว์เซอร์</p>
-                </article>
-
-                <article>
-                    <h3>สิ่งที่อยากปรับปรุงหรือเพิ่มเติมในอนาคต</h3>
-                    <p>ในส่วนของการปรับปรุงเพิ่มเติม อยากเพิ่มเทคนิคการตกแต่งด้วย Animation เพื่อให้ดูน่าสนใจมากยิ่งขึ้น
-                    </p>
-                </article>
-
-                <div>
-                    <h2>Portfolio item</h2>
-                    <h3>First item</h3>
-                    <p><strong>Title:</strong> CS100 A1:My First Learning Portfolio</p>
-                    <p><strong>Type:</strong> Course Assignment</p>
-                    <p><strong>Date:</strong> 30 Aug 2026</p>
-                    <p><strong>Role:</strong> Individual Developer</p>
-                    <p><strong>Description:</strong> พัฒนาเว็บไซต์Learning Portfolio หน้าเดียวด้วย HTML และ CSS</p>
-                    <p><strong>Skills:</strong> HTML, CSS, Semantic HTML</p>
-                    <p><strong>Reflection:</strong> ตอนที่ได้ทำ Assignment: My First Learning Portfolio
-                        ได้ฝึกสร้างเว็บโดยใช้ HTML และ CSS จึงได้เข้าใจที่ทั้งสองส่วนทำงานร่วมกันยังไง
-                        ตอนแรกมีปัญหาเรื่อง semantic HTML และ path ของรูป แต่พอลองแก้ทีละจุดก็เข้าใจมากขึ้นถ้าพัฒนาต่อ
-                        อยากปรับหน้าเว็บให้ดูดีและใช้งานบนมือถือได้ดีขึ้น</p>
-                    <p><strong>Evidence:</strong> รูปของผลงานชิ้นนี้</p>
-                    <div class="evidence-images">
-                        <img src="media/screenshot1.jpg" class="evidence-img"
-                            alt="Screenshot of the learning portfolio homepage">
-                        <img src="media/screenshot2.jpg" class="evidence-img"
-                            alt="Screenshot of the learning portfolio content">
+        <main class="py-4 py-lg-5">
+            <div class="row g-4">
+                <section class="col-12 col-lg-4" aria-labelledby="about-heading">
+                    <div class="content-card h-100 p-4">
+                        <h2 id="about-heading">About Me</h2>
+                        <img src="media/selfa.jpg" class="profile-image img-fluid" alt="Portrait of Kritsana Penyai">
+                        <p>ชื่อ-นามสกุล: นายกฤษณะ เป็นใย</p>
+                        <p>รหัสนักศึกษา: 6909650167</p>
+                        <p>สาขาวิชา: วิทยาการคอมพิวเตอร์</p>
+                        <p>มหาวิทยาลัย: มหาวิทยาลัยธรรมศาสตร์</p>
+                        <p class="mb-0">ข้อมูลติดต่อ: <a href="mailto:kritsana.pen@dome.tu.ac.th">kritsana.pen@dome.tu.ac.th</a></p>
                     </div>
-                    <br>
-                    <h3>Second item</h3>
-                    <p><strong>Title:</strong> ScB TechX Campus Tour @ TU</p>
-                    <p><strong>Type:</strong> Activity</p>
-                    <p><strong>Date:</strong> 12 Oct 2026</p>
-                    <p><strong>Role:</strong> Participant</p>
-                    <p><strong>Description:</strong> พบกับวิทยากรจาก SCB TechX ที่มีประสบการณ์ทำงานจริงด้าน AI และ Data</p>
-                    <p><strong>Skills:</strong> Communication, Collaboration, Connection</p>
-                    <p><strong>Reflection:</strong> รอเข้าร่วมกิจกรรม SCB TechX Campus Tour เพื่อเรียนรู้เกี่ยวกับการนำ AI และ Data ไปประยุกต์ใช้ในงานจริง โดยคาดว่าจะได้เรียนรู้ว่า AI Agent ต้องอาศัยข้อมูลที่มีคุณภาพและความเข้าใจในบริบทต่าง ๆ ความท้าทายคือการทำความเข้าใจการทำงานของ Semantic Models จึงจะตั้งใจรับฟังคำอธิบายจากวิทยากร และในอนาคตอยากศึกษาเพิ่มเติมเกี่ยวกับ AI Agent และการจัดการข้อมูล พร้อมฝึกสร้างโปรเจกต์เพื่อนำความรู้ไปใช้จริง</p>
-                    <p><strong>Evidence:</strong> รูปลายละเอียดของการเชิญชวน</p>
-                    <img src="media/SCB.jpg" class="scnd-evidence-img"
-                            alt="Screenshot of the SCB TechX Campus Tour invitation">
-                </div>
+                </section>
+
+                <section class="col-12 col-md-6 col-lg-4" aria-labelledby="built-heading">
+                    <div class="content-card h-100 p-4">
+                        <h2 id="built-heading">What I Built</h2>
+                        <p>งาน A1 นี้ เป็นเว็บไซต์แบบหน้าเดียว(Single-page) Learning Portfolio</p>
+                        <p class="fw-bold mb-2">ส่วนประกอบสำคัญ:</p>
+                        <ul>
+                            <li>Header แสดงชื่อผลงาน</li>
+                            <li>ส่วน About Me แสดงข้อมูลส่วนตัวและรูปภาพ</li>
+                            <li>ส่วน Reflection และเนื้อหาสรุปกระบวนการทำงาน</li>
+                        </ul>
+                        <p class="mb-0">วิเคราะห์ Client / Server: ในขณะที่เปิดใช้งานเว็บไซต์นี้จากเครื่องตนเอง (ผ่านไฟล์ `file:///...`)
+                            เกิดขึ้นเพียง Client Side เท่านั้น เนื่องจากเบราว์เซอร์ทำการอ่านและประมวลผลไฟล์ HTML/CSS
+                            โดยตรงจากดิสก์ในเครื่อง ยังไม่มี Server ประมวลผลหรือส่งข้อมูลผ่านโปรโตคอล HTTP/HTTPS</p>
+                    </div>
+                </section>
+
+                <section class="col-12 col-md-6 col-lg-4" aria-labelledby="how-heading">
+                    <div class="content-card h-100 p-4">
+                        <h2 id="how-heading">How I Built It</h2>
+                        <p>งานนี้เริ่มจากการวางโครงสร้างเนื้อหาด้วย HTML จากนั้นทำการตกแต่งด้วย CSS เพื่อความสวยงามและอ่านง่าย</p>
+                        <p class="fw-bold mb-2">เครื่องมือและแหล่งข้อมูลที่ใช้:</p>
+                        <ul class="mb-0">
+                            <li>VS Code ในการเขียนโค้ด</li>
+                            <li>เว็บไซต์ศึกษาเพิ่มเติม: <a href="https://www.w3schools.com/" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
+                        </ul>
+                    </div>
+                </section>
+
+                <section class="col-12" aria-labelledby="reflection-heading">
+                    <div class="content-card p-4">
+                        <h2 id="reflection-heading">Reflection</h2>
+                        <div class="row g-3">
+                            <article class="col-12 col-md-4">
+                                <div class="reflection-card h-100 p-3">
+                                    <h3>ปัญหาและความท้าทายที่พบ</h3>
+                                    <p class="mb-0">ความท้าทายหลักคือการจัด Layout ด้วย CSS ให้ตรงตามโครงสร้างที่ต้องการ
+                                        และการอ้างอิงไฟล์ให้ถูกต้องเพื่อไม่ให้เกิด Broken Link แก้ไขได้โดยการตรวจสอบ Directory Tree
+                                        อย่างละเอียด</p>
+                                </div>
+                            </article>
+                            <article class="col-12 col-md-4">
+                                <div class="reflection-card h-100 p-3">
+                                    <h3>ความเข้าใจที่ได้รับจากการทำ A1</h3>
+                                    <p class="mb-0">เข้าใจโครงสร้างของการเขียนมากขึ้น ในการเลือกใช้ tag ที่ช่วยให้โครงสร้างเป็นระเบียบ
+                                        และเข้าใจการทำงานของ Client-side ในการเปิดไฟล์เว็บเบราว์เซอร์</p>
+                                </div>
+                            </article>
+                            <article class="col-12 col-md-4">
+                                <div class="reflection-card h-100 p-3">
+                                    <h3>สิ่งที่อยากปรับปรุงหรือเพิ่มเติมในอนาคต</h3>
+                                    <p class="mb-0">ในส่วนของการปรับปรุงเพิ่มเติม อยากเพิ่มเทคนิคการตกแต่งด้วย Animation เพื่อให้ดูน่าสนใจมากยิ่งขึ้น</p>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="col-12" aria-labelledby="portfolio-heading">
+                    <div class="content-card p-4">
+                        <h2 id="portfolio-heading">Portfolio item</h2>
+                        <div class="row g-4">
+                            <article class="col-12 col-xl-6">
+                                <div class="portfolio-card h-100 p-3 p-md-4">
+                                    <h3>First item</h3>
+                                    <p><strong>Title:</strong> CS100 A1:My First Learning Portfolio</p>
+                                    <p><strong>Type:</strong> Course Assignment</p>
+                                    <p><strong>Date:</strong> 30 Aug 2026</p>
+                                    <p><strong>Role:</strong> Individual Developer</p>
+                                    <p><strong>Description:</strong> พัฒนาเว็บไซต์Learning Portfolio หน้าเดียวด้วย HTML และ CSS</p>
+                                    <p><strong>Skills:</strong> HTML, CSS, Semantic HTML</p>
+                                    <p><strong>Reflection:</strong> ตอนที่ได้ทำ Assignment: My First Learning Portfolio
+                                        ได้ฝึกสร้างเว็บโดยใช้ HTML และ CSS จึงได้เข้าใจที่ทั้งสองส่วนทำงานร่วมกันยังไง
+                                        ตอนแรกมีปัญหาเรื่อง semantic HTML และ path ของรูป แต่พอลองแก้ทีละจุดก็เข้าใจมากขึ้นถ้าพัฒนาต่อ
+                                        อยากปรับหน้าเว็บให้ดูดีและใช้งานบนมือถือได้ดีขึ้น</p>
+                                    <p class="fw-bold">Evidence: รูปของผลงานชิ้นนี้</p>
+                                    <div class="row g-3 evidence-images">
+                                        <div class="col-12 col-md-6">
+                                            <img src="media/screenshot1.jpg" class="img-fluid w-100 evidence-img"
+                                                alt="Screenshot of the learning portfolio homepage">
+                                        </div>
+                                        <div class="col-12 col-md-6">
+                                            <img src="media/screenshot2.jpg" class="img-fluid w-100 evidence-img"
+                                                alt="Screenshot of the learning portfolio content">
+                                        </div>
+                                    </div>
+                                </div>
+                            </article>
+
+                            <article class="col-12 col-xl-6">
+                                <div class="portfolio-card h-100 p-3 p-md-4">
+                                    <h3>Second item</h3>
+                                    <p><strong>Title:</strong> ScB TechX Campus Tour @ TU</p>
+                                    <p><strong>Type:</strong> Activity</p>
+                                    <p><strong>Date:</strong> 12 Oct 2026</p>
+                                    <p><strong>Role:</strong> Participant</p>
+                                    <p><strong>Description:</strong> พบกับวิทยากรจาก SCB TechX ที่มีประสบการณ์ทำงานจริงด้าน AI และ Data</p>
+                                    <p><strong>Skills:</strong> Communication, Collaboration, Connection</p>
+                                    <p><strong>Reflection:</strong> รอเข้าร่วมกิจกรรม SCB TechX Campus Tour เพื่อเรียนรู้เกี่ยวกับการนำ AI และ Data ไปประยุกต์ใช้ในงานจริง โดยคาดว่าจะได้เรียนรู้ว่า AI Agent ต้องอาศัยข้อมูลที่มีคุณภาพและความเข้าใจในบริบทต่าง ๆ ความท้าทายคือการทำความเข้าใจการทำงานของ Semantic Models จึงจะตั้งใจรับฟังคำอธิบายจากวิทยากร และในอนาคตอยากศึกษาเพิ่มเติมเกี่ยวกับ AI Agent และการจัดการข้อมูล พร้อมฝึกสร้างโปรเจกต์เพื่อนำความรู้ไปใช้จริง</p>
+                                    <p class="fw-bold">Evidence: รูปลายละเอียดของการเชิญชวน</p>
+                                    <img src="media/SCB.jpg" class="img-fluid w-100 invitation-image"
+                                        alt="Invitation to the SCB TechX Campus Tour">
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </section>
             </div>
         </main>
     </div>
